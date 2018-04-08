@@ -39,5 +39,5 @@ jobs:
           key: v1-dependencies-{{ checksum "pom.xml" }}
 
       # run tests!
-      - run: mvn integration-test dockerfile:push -Ddockerfile.username=$docker_username -Ddockerfile.password=$docker_password
+      - run: mvn integration-test dockerfile:push -Ddockerfile.username=${docker_username} -Ddockerfile.password=${docker_password}
 
