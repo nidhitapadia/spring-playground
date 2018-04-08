@@ -4,3 +4,12 @@
 
 Sample application with spring and reactive programming.
 
+### To run locally
+
+To run the container locally in interactive mode, use the below command.
+
+```shell
+docker run -p 8080:8080 -i -t nidhitapadia/spring-playground:0.0.1-SNAPSHOT
+```
+
+> In case of daemon mode, replace -i with -d
